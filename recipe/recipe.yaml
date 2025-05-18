@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pydantic-xml
-  version: "2.16.0"
+  version: "2.17.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydantic_xml-${{ version }}.tar.gz
-  sha256: 64ae5d8538a23706471f0b2007c9252ef290dff40c216dbc3051c79030aaf03f
+  sha256: 136d6e61277871b40fe49f0aafa946ef46eeb1db8d6f86a30ce0557cf8fc204d
 
 build:
   number: 0
