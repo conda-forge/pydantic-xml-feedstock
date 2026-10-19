@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: pydantic-xml
   version: "2.22.0"
 
 package:
-  name: ${{ name|lower }}
+  name: pydantic-xml
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydantic_xml-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/pydantic-xml/pydantic-xml/pydantic_xml-${{ version }}.tar.gz
   sha256: 3f3382a0aaa5117e117541cdb4e5b6ceeaa7d9ffeea7b30e742a8b221589bca8
 
 build:
@@ -24,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - pydantic >=2.6.0,!=2.10.0b1
+    - pydantic >=2.14.0
     - pydantic-core >=2.15.0
   run_constraints:
     - lxml >=4.9.0
